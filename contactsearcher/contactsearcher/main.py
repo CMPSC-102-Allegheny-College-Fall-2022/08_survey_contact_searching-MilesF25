@@ -1,9 +1,11 @@
 """Define the command-line interface for the contact searching program."""
 
 # TODO: Add all of the required import statements to this module
-
+import typer
+from typing import Optional
+from pathlib import Path
 # TODO: create a Typer object to support the command-line interface
-
+cli = typer.Typer()
 
 @cli.command()
 def contactsearcher(
@@ -33,6 +35,8 @@ def contactsearcher(
     typer.echo(
         f'  We are looking for contacts who have a job related to "{job_description}":'
     )
+
+    
     # TODO: perform the search for all of the relevant email addresses given the job description
     # TODO: we know that there are some contacts in the list, so iterate through the list of
     # the contacts and display them in the terminal window
