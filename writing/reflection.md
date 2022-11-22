@@ -61,9 +61,22 @@ search_for_email_given_job({job_description},contacts_file)
 ```
 
 #### Test case for the function called `search_for_email_given_job`
-
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+```python
+def test_find_multiple_matching_result():
+    """Check to ensure that search for contacts works for multiple matches."""
+    contacts_database = """kylebarnes@hotmail.com,Records manager
+joe70@yahoo.com,Network engineer
+torresjames@white.info,Electrical engineer
+shawkins@watson.com,Science writer"""
+    contacts_list = search.search_for_email_given_job("engineer", contacts_database)
+    assert len(contacts_list) == 2
+```
+This code checks to see the function search_for_email_given_job works.
+This code sets contaacts_database equal to a random email and job description.
+Then it calls the search_for_email_given_job on engineer and contacts_database
+then it sets the output from the function equal to contacts_list
+Finally the assert function is used to make sure that the length of contacts_list
+is equal to two.
 
 #### Execute trace of the `contactsearcher` program
 
