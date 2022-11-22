@@ -4,7 +4,7 @@
 import typer
 from typing import Optional
 from pathlib import Path
-from contactsearcher import search
+#sfrom contactsearcher import search
 # : create a Typer object to support the command-line interface
 cli = typer.Typer()
 

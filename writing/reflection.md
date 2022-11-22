@@ -88,6 +88,16 @@ function in the `main` module, explain all of the subsequent function calls in
 the correct order, and then show how the program's control returns to the
 `contactsearcher` function in the `main` module.
 
+This function call, calls contactsearcher and gives it the job description and the file.
+The first thing the function does is use an if statement to make sure that a file is given, if it is
+no file is given, then the program will say no contacts file specified!. If it is the correct
+file then the program will read in the file, then it will use the splitlines function to seperate 
+the emails from the job descriptions. Next the program gets the length of the file after using the
+splitlines function and stores it inside a variable. Then it prints a message telling the user
+that the search will begin. If the file is not correct then it print he contacts file does not exist. 
+If the file is correct then it will begin the search, the progrma will use the search_for_email_given_job
+function to find the correct email and job descriptions and it will print them out.
+
 - `poetry run contactsearcher --job-description "engineer" --contacts-file input/contacts.txt`
 
 ## Professional Assessment
